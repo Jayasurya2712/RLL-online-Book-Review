@@ -1,11 +1,13 @@
 <app-user-header></app-user-header>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
 
   <div [class]="accountEnable?'show':'hide'">
@@ -14,10 +16,22 @@
       <div class="row">
         <div class="col-md-6">
           <table cellpadding="20" class="table-shadow">
-            <tr><td>Name:</td><td> {{user.name}}</td></tr>
-            <tr><td>Email:</td><td name="emp_name">{{user.email}}</td></tr>
-            <tr><td>Password:</td><td>{{user.password}}</td></tr>
-            <tr><td colspan="2" align="center"><button class="btn btn-success" type="button" name="add" (click)="editAccount()">Edit profile</button></td></tr>
+            <tr>
+              <td>Name:</td>
+              <td> {{user.name}}</td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td name="emp_name">{{user.email}}</td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td>{{user.password}}</td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center"><button class="btn btn-success" type="button" name="add"
+                  (click)="editAccount()">Edit profile</button></td>
+            </tr>
           </table>
         </div>
       </div>
@@ -28,16 +42,27 @@
     <h1 align="center" style="color:#ffffff;">Edit profile</h1><br>
     <div class="container table-container">
       <div class="row">
-        <!-- <div class="col-md-6">
-          <img class="profile-image" style="width: 400px; height: 400px; display: block; margin: 0 auto;" src="https://static.vecteezy.com/system/resources/previews/000/380/793/original/edit-profile-vector-icon.jpg" alt="Profile Image">
-        </div> -->
         <div class="col-md-6">
           <table cellpadding="20" class="table-shadow">
-            <tr><td>Name:</td><td><input class="form-control" type="text" [(ngModel)]="user.name"></td></tr>
-            <tr><td>Email Id:</td><td><input  class="form-control" type="text" [(ngModel)]="user.email" disabled></td></tr>
-            <tr><td>Password:</td><td><input  class="form-control" type="text" [(ngModel)]="user.password" ></td></tr>
-            <tr><td align="center" colspan="2" style="color:red">{{errorPassword}}</td></tr>
-            <tr><td colspan="2" align="center"><button class="btn btn-success" type="button" name="add" (click)="updateAccount(user.name, user.email, user.password)">Update profile</button></td></tr>
+            <tr>
+              <td>Name:</td>
+              <td><input class="form-control" type="text" [(ngModel)]="user.name"></td>
+            </tr>
+            <tr>
+              <td>Email Id:</td>
+              <td><input class="form-control" type="text" [(ngModel)]="user.email" disabled></td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td><input class="form-control" type="text" [(ngModel)]="user.password"></td>
+            </tr>
+            <tr>
+              <td align="center" colspan="2" style="color:red">{{errorPassword}}</td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center"><button class="btn btn-success" type="button" name="add"
+                  (click)="updateAccount(user.name, user.email, user.password)">Update profile</button></td>
+            </tr>
           </table>
         </div>
       </div>
@@ -45,4 +70,5 @@
   </div>
 
 </body>
+
 </html>

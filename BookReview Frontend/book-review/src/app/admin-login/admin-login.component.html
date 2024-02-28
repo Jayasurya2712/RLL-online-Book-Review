@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Login</title>
-  <link rel="stylesheet" href="admin-login.component.css">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="admin-login.component.css" />
 </head>
 
-
-
-<body >
+<body>
   <div class="home">
-    <button (click)="home()" class="btn btn-primary me-3" style="float: right; clear: both;">Home Page</button>
- 
+    <button (click)="home()" class="btn btn-primary me-3" style="float: right; clear: both">
+      Home Page
+    </button>
   </div>
 
-
-  <div class="login-container ">
-    
-    
+  <div class="login-container">
     <div class="login-box1">
       <h1 class="login-title">Admin Login</h1>
-      
+
       <div class="form-group">
         <label for="email">Email Id :</label>
-        <input name="email" class="form-control" type="text" [(ngModel)]="email" placeholder="Enter admin email" required>
+        <input name="email" class="form-control" type="text" [(ngModel)]="email" placeholder="Enter admin email"
+          required />
         <p class="error-message">{{ errorEmail }}</p>
       </div>
       <div class="form-group">
         <label for="pass">Password :</label>
-        <input name="pass" class="form-control" type="password" [(ngModel)]="password" placeholder="Enter admin password" required>
+        <input name="pass" class="form-control" type="password" [(ngModel)]="password"
+          placeholder="Enter admin password" required />
       </div>
       <h3 class="error-message" name="message">{{ loginMessage }}</h3>
       <div class="form-group" align="center">
-        <button name="login" class="btn btn-success" type="button" (click)="checkLogin()">Login</button>
+        <button name="login" class="btn btn-success" type="button" (click)="checkLogin()">
+          Login
+        </button>
       </div>
     </div>
-    <div class="additional-box">
-    </div>
+    <div class="additional-box"></div>
   </div>
-
 </body>
-</html>
- 
 
- 
+</html>

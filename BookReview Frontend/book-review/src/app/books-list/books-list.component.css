@@ -1,63 +1,73 @@
-body{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.26),rgba(255, 255, 255, 0.397)),url(https://t4.ftcdn.net/jpg/07/18/45/41/360_F_718454107_bllWMfUzftPuzsD44xb6m757Tssh8P33.jpg);
-  
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(255, 255, 255, 0.397)), url(https://t4.ftcdn.net/jpg/07/18/45/41/360_F_718454107_bllWMfUzftPuzsD44xb6m757Tssh8P33.jpg);
+
   background-size: cover;
   color: white;
   font-weight: bold;
   background-position: bottom;
-  height:700px
+  height: 700px
 }
-.show{
-  display:contents;
+
+.show {
+  display: contents;
 }
-.hide{
+
+.hide {
   display: none;
 }
 
-.desc{
-  white-space: nowrap; 
-      width: 200px;
-      overflow: hidden;
-      text-overflow: ellipsis;
+.desc {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
-td,tr,th{
-  padding:15px 15px;
+td,
+tr,
+th {
+  padding: 15px 15px;
   text-align: center;
 }
-.available{
- text-shadow: rgb(38, 125, 131) 2px 2px 2px;
-  color:rgb(179, 234, 255) 
+
+.available {
+  text-shadow: rgb(38, 125, 131) 2px 2px 2px;
+  color: rgb(179, 234, 255)
 }
 
-td,tr{
+td,
+tr {
   font-size: 1.2rem;
 }
-th{
+
+th {
   font-size: 1.5rem;
   color: black;
 
 }
 
 
-.buttons{
-  margin-left:6px
+.buttons {
+  margin-left: 6px
 }
 
-.btn-primary{
-  background-color:#dc3545;
+.btn-primary {
+  background-color: #dc3545;
   border: none;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 3px solid black;
 }
 
-table{
+table {
   margin: 30px;
 }
-.form-control{
+
+.form-control {
   margin-left: 30px;
-  
+
 }

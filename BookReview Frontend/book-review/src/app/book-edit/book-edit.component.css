@@ -14,7 +14,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar h1{
+.navbar h1 {
   color: white;
 }
 
@@ -22,9 +22,8 @@ h1 {
   color: black;
   text-align: center;
   margin-top: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-shadow: none;
-  
 }
 h2 {
   color: red;
@@ -41,12 +40,15 @@ table {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-table td, table th {
+table td,
+table th {
   padding: 10px;
   border: 1px solid #ccc;
 }
 
-input[type="text"], input[type="number"], textarea {
+input[type="text"],
+input[type="number"],
+textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -88,7 +90,8 @@ a {
   padding: 10px 20px;
   color: white;
 }
-button, .btn-link {
+button,
+.btn-link {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -101,7 +104,8 @@ button, .btn-link {
   text-align: center;
 }
 
-button:hover, .btn-link:hover {
+button:hover,
+.btn-link:hover {
   background-color: #218838;
 }
 

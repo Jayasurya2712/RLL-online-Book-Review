@@ -1,15 +1,16 @@
-.show{
-  display:contents;
+.show {
+  display: contents;
 }
-.hide{
+.hide {
   display: none;
 }
-body,html {
-  background-image: url('https://img.freepik.com/free-photo/blue-smooth-textured-paper-background_53876-108275.jpg?t=st=1709033398~exp=1709036998~hmac=423933a5b7cc4ffccc1203c3376fa4eaa0210e392f13e5d9f48772e373d3ad99&w=996');
+body,
+html {
+  background-image: url("https://img.freepik.com/free-photo/blue-smooth-textured-paper-background_53876-108275.jpg?t=st=1709033398~exp=1709036998~hmac=423933a5b7cc4ffccc1203c3376fa4eaa0210e392f13e5d9f48772e373d3ad99&w=996");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   height: 695px;
   padding: 0;
   overflow-x: hidden;
@@ -18,18 +19,15 @@ body,html {
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
   display: flex;
   justify-content: center;
-
 }
-.table-shadow{
+.table-shadow {
   border-radius: 20px;
   text-align: center;
-  box-shadow:0px 0px 10px rgba(0, 0, 0,10 );
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
   background-color: #529abbad;
   width: 500px;
   height: 350px;
 }
-
-
 
 td {
   font-size: 20px;

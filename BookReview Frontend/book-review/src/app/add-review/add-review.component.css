@@ -1,50 +1,51 @@
-.show{
-  display:contents;
+.show {
+  display: contents;
 }
-.hide{
+
+.hide {
   display: none;
 }
-body{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url(https://img.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg?t=st=1709038802~exp=1709042402~hmac=13ba5dca1dc7c29511fdbba2e9b144685a901e2b8764a04170b5de06c01c1744&w=996);
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(https://img.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg?t=st=1709038802~exp=1709042402~hmac=13ba5dca1dc7c29511fdbba2e9b144685a901e2b8764a04170b5de06c01c1744&w=996);
   background-size: cover;
   color: white;
   font-weight: bold;
- 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   height: 100vh;
   padding: 0;
   overflow-x: hidden;
-  
-  
 }
 
-.desc{
-  white-space: nowrap; 
+.desc {
+  white-space: nowrap;
   width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-td,tr,th{
+td,
+tr,
+th {
   border: 3px solid black;
-  padding:15px 15px;
+  padding: 15px 15px;
   text-align: center;
 }
 
-
-.available{
+.available {
   text-shadow: rgb(23, 28, 105) 2px 2px 2px;
-   color:rgb(179, 237, 255) 
- }
- h1{
-  text-shadow: #86b7fe 2px 2px 2px;
- }
+  color: rgb(179, 237, 255);
+}
 
- table{
-  
+h1 {
+  text-shadow: #86b7fe 2px 2px 2px;
+}
+
+table {
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,26 +54,30 @@ table.table-stripped {
   width: 60%;
 }
 
-
-
 table.review {
   border: none;
 }
 
-table.review td, table.review tr {
+table.review td,
+table.review tr {
   border: none;
 }
+
 @keyframes moveRightToLeft {
   0% {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 #moving-text {
-  white-space: nowrap; /* To prevent text from wrapping */
-  animation: moveRightToLeft 2s linear; /* Adjust duration (5s) as needed */
+  white-space: nowrap;
+  /* To prevent text from wrapping */
+  animation: moveRightToLeft 2s linear;
+  /* Adjust duration (5s) as needed */
 }

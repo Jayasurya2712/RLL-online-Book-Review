@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <div class="navbar">
     <div>
-      <h1><a ><img src="./assets/logo.jpg" height="25" alt="Logo" loading="lazy" style="margin-top: -10px;">
-      </a>ENZ Book Club</h1>
+      <h1><a><img src="./assets/logo.jpg" height="25" alt="Logo" loading="lazy" style="margin-top: -10px;">
+        </a>ENZ Book Club</h1>
     </div>
     <div class="btn-group"> <!-- Added btn-group class to align buttons -->
       <a class="btn-link" routerLink="/dashboard">Return to Dashboard</a>
-      
+
     </div>
   </div>
   <div class="container">
-    
+
     <h1>Edit {{bookRef.name}}</h1>
     <h2>{{errorMessage}}</h2>
     <table border="1" class="table table-stripped">
-      <tr><td>Id</td><td><input class="form-control" type="text" [(ngModel)]="bookRef.id" disabled></td></tr>
-      <tr><td>Title</td><td><input name="name" class="form-control" placeholder="Enter book tile" type="text" [(ngModel)]="bookRef.name" required></td></tr>
-      <tr><td>Author Name</td><td><input name="author" class="form-control" placeholder="Enter author name" type="text" [(ngModel)]="bookRef.author" required></td></tr>
-      <tr><td>Description</td><td><textarea name="description" class="form-control" placeholder="Enter book description" [(ngModel)]="bookRef.description" required></textarea></td></tr>
-      <tr><td>price</td><td><input name="price" class="form-control" type="number" placeholder="Enter book price " [(ngModel)]="bookRef.price" required></td></tr>
-      <tr><td>Category</td><td><input name="category" class="form-control" type="text" placeholder="Enter book Category" [(ngModel)]="bookRef.category" required></td></tr>
-      <tr><td>Enable or Disable</td><td><input type="radio" name="group" value="enable" [(ngModel)]="bookRef.enable">Enable
-      <input type="radio" name="group"  value="disable" [(ngModel)]="bookRef.enable">Disable</td></tr>
-      <tr><td colspan="2" align="center"><button class="btn btn-success" type="button" name="add" (click)="updateBook()">Edit Book</button></td></tr>
+      <tr>
+        <td>Id</td>
+        <td><input class="form-control" type="text" [(ngModel)]="bookRef.id" disabled></td>
+      </tr>
+      <tr>
+        <td>Title</td>
+        <td><input name="name" class="form-control" placeholder="Enter book tile" type="text" [(ngModel)]="bookRef.name"
+            required></td>
+      </tr>
+      <tr>
+        <td>Author Name</td>
+        <td><input name="author" class="form-control" placeholder="Enter author name" type="text"
+            [(ngModel)]="bookRef.author" required></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td><textarea name="description" class="form-control" placeholder="Enter book description"
+            [(ngModel)]="bookRef.description" required></textarea></td>
+      </tr>
+      <tr>
+        <td>price</td>
+        <td><input name="price" class="form-control" type="number" placeholder="Enter book price "
+            [(ngModel)]="bookRef.price" required></td>
+      </tr>
+      <tr>
+        <td>Category</td>
+        <td><input name="category" class="form-control" type="text" placeholder="Enter book Category"
+            [(ngModel)]="bookRef.category" required></td>
+      </tr>
+      <tr>
+        <td>Enable or Disable</td>
+        <td><input type="radio" name="group" value="enable" [(ngModel)]="bookRef.enable">Enable
+          <input type="radio" name="group" value="disable" [(ngModel)]="bookRef.enable">Disable
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><button class="btn btn-success" type="button" name="add"
+            (click)="updateBook()">Edit Book</button></td>
+      </tr>
     </table>
   </div>
 </body>
+
 </html>

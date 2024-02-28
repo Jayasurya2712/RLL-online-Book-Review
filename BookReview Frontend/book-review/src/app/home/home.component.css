@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('https://t4.ftcdn.net/jpg/07/18/45/41/360_F_718454107_bllWMfUzftPuzsD44xb6m757Tssh8P33.jpg');
+  background-image: url("https://t4.ftcdn.net/jpg/07/18/45/41/360_F_718454107_bllWMfUzftPuzsD44xb6m757Tssh8P33.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -85,4 +85,3 @@ body {
   background-color: #b02a37;
   transform: scale(1.05);
 }
-

@@ -3,27 +3,26 @@
   margin: 0px 10px;
   text-decoration: none;
 } */
-div{
+div {
   text-align: center;
 }
-.navs{
+.navs {
   float: right;
 }
-nav{
+nav {
   background-color: rgb(205, 233, 255);
 }
 
-.nav-links{
+.nav-links {
   border: 1px;
-  border-radius:20px;
+  border-radius: 20px;
   padding: 5px 10px;
   text-decoration: none;
-  color: #526D82;
+  color: #526d82;
   background-color: rgb(255, 255, 255);
-  margin:0px 5px;
-  
+  margin: 0px 5px;
 }
-.nav-links:hover{
-  color:rgb(255, 255, 255);
-  background-color: #526D82
+.nav-links:hover {
+  color: rgb(255, 255, 255);
+  background-color: #526d82;
 }

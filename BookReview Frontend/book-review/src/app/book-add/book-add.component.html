@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
+
 </head>
+
 <body>
   <div class="navbar">
     <div>
-      <h1><a ><img src="./assets/logo.jpg" height="25" alt="Logo" loading="lazy" style="margin-top: -10px;">
-      </a>ENZ Book Club</h1>
+      <h1><a><img src="./assets/logo.jpg" height="25" alt="Logo" loading="lazy" style="margin-top: -10px;">
+        </a>ENZ Book Club</h1>
     </div>
     <div class="btn-group">
       <a class="btn-link" routerLink="/dashboard">Return to Dashboard</a>
-      
+
     </div>
   </div>
   <div class="container">
@@ -31,7 +33,8 @@
       </tr>
       <tr>
         <td>Description</td>
-        <td><textarea name="description" [(ngModel)]="book.description" placeholder="Enter book description" required></textarea></td>
+        <td><textarea name="description" [(ngModel)]="book.description" placeholder="Enter book description"
+            required></textarea></td>
       </tr>
       <tr>
         <td>Price</td>
@@ -39,7 +42,8 @@
       </tr>
       <tr>
         <td>Category</td>
-        <td><input name="category" type="text" [(ngModel)]="book.category" placeholder="Enter book category" required></td>
+        <td><input name="category" type="text" [(ngModel)]="book.category" placeholder="Enter book category" required>
+        </td>
       </tr>
       <tr>
         <td colspan="2" align="center">
@@ -49,4 +53,5 @@
     </table>
   </div>
 </body>
+
 </html>

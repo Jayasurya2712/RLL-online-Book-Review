@@ -1,19 +1,42 @@
 <app-user-header></app-user-header>
 <link rel="stylesheet" href="./books-list.component.css">
+
 <body>
-  <h1 align="center" style="color:rgb(194, 255, 252); margin-bottom: 100px;" >Books List</h1>
-  <input name="name" class="form-control" style="width:30%;float: left;margin:0px 30px;" placeholder="Search by book name or author name or category" type="text" [(ngModel)]="temp"><button class="btn btn-success" (click)="search()">Search</button>
-      <table border="2">
-      <tr><th>Id</th><th>Title</th><th>Author</th><th>Description</th><th>Price</th><th>Category</th><th>Action</th></tr>
-      <tr *ngFor="let book of books">
+  <h1 align="center" style="color:rgb(194, 255, 252); margin-bottom: 100px;">Books List</h1>
+  <input name="name" class="form-control" style="width:30%;float: left;margin:0px 30px;"
+    placeholder="Search by book name or author name or category" type="text" [(ngModel)]="temp"><button
+    class="btn btn-success" (click)="search()">Search</button>
+  <table border="2">
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let book of books">
       <td>{{book.id}}</td>
-      <td><p class="desc" title={{book.name}}>{{book.name}}</p></td>
-      <td><p class="desc" title={{book.author}}>{{book.author}}</p></td>
-      <td><p class="desc" title={{book.description}}>{{book.description}}</p></td>
+      <td>
+        <p class="desc" title={{book.name}}>{{book.name}}</p>
+      </td>
+      <td>
+        <p class="desc" title={{book.author}}>{{book.author}}</p>
+      </td>
+      <td>
+        <p class="desc" title={{book.description}}>{{book.description}}</p>
+      </td>
       <td>{{book.price | currency}}</td>
-      <td><p class="desc" title={{book.category}}>{{book.category}}</p></td>
+      <td>
+        <p class="desc" title={{book.category}}>{{book.category}}</p>
+      </td>
       <td><button class="btn btn-primary" (click)="addReview(book)">Review Book</button>
-      </tr>
-      <tr><td colspan="7"><h3 align="center" class="available">{{availableMessage}}</h3></td></tr>
-    </table>
-    </body>
+    </tr>
+    <tr>
+      <td colspan="7">
+        <h3 align="center" class="available">{{availableMessage}}</h3>
+      </td>
+    </tr>
+  </table>
+</body>

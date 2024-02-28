@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://img.freepik.com/premium-photo/abstract-blurred-empty-college-library-interior-space-blurry-classroom-with-bookshelves-by-defocused-effect-generative-ai_438099-11738.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #3333330d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  background-color: rgba(12, 52, 92, 0.37);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+  background-color: #5d636b;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #915a5f;
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+  transform: scale(1.05);
+}

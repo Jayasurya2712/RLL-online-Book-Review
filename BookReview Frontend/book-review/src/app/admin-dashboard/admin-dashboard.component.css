@@ -1,0 +1,72 @@
+
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.26),rgba(255, 255, 255, 0.397)),url(https://t4.ftcdn.net/jpg/07/18/45/41/360_F_718454107_bllWMfUzftPuzsD44xb6m757Tssh8P33.jpg);
+  background-size: cover;
+  color: white;
+  
+  font-weight: bold;
+  
+  height:700px
+;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 695px;
+    padding: 0;
+    overflow-x: hidden;
+  
+}
+.show{
+  display:contents;
+}
+.hide{
+  display: none;
+}
+
+.desc{
+  white-space: nowrap; 
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.available{
+  text-shadow: rgb(19, 109, 116) 2px 2px 2px;
+   color:rgb(177, 232, 255) 
+ }
+ table{
+  margin: 30px;
+ }
+ 
+ td,tr{
+   font-size: 1.1rem;
+ }
+ th{
+   font-size: 1.3rem;
+ }
+
+td,tr,th{
+  padding:15px 9px;  
+  text-align: center;
+  border: 3px solid black;
+}
+
+
+.buttons{
+  margin-left:6px
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 20px;
+  color: white;
+}
+.btn{
+  margin: 2px;
+}
+
+
+ 

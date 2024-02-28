@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://t4.ftcdn.net/jpg/07/18/45/41/360_F_718454107_bllWMfUzftPuzsD44xb6m757Tssh8P33.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#moving-text {
+  white-space: nowrap; /* To prevent text from wrapping */
+  animation: moveRightToLeft 2s linear; /* Adjust duration (5s) as needed */
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+  background-color: rgb(37, 86, 134);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #915a5f;
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+  transform: scale(1.05);
+}
+

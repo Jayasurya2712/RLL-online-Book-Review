@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="navbar">
+    <div>
+        <h1> <a ><img src="./assets/logo.jpg" height="25" alt="Logo" loading="lazy" style="margin-top: -10px;">
+        </a> ENZ Book Club</h1>
+    </div>
+    <div>
+      <button class="btn btn-danger" (click)="logout()">Log out</button>
+    </div>
+  </div>
+
+  <div [class]="bookListEnable?'show':'hide'">
+    <h1 align="center" style="color:rgb(180, 244, 255);">Books List</h1>
+    <button class="btn btn-success" style="margin-top: 5%; margin-left: 30px;" name="add" (click)="addNewBook()">Add New Book</button>
+    <table border="0">
+
+    <tr><th>Id</th><th>Title</th><th>Author</th><th>Description</th><th>Price</th><th>Category</th><th>Action</th></tr>
+    
+    <tr *ngFor="let book of books">
+    <td>{{book.id}}</td>
+    <td><p class="desc" title={{book.name}}>{{book.name}}</p></td>
+    <td><p class="desc" title={{book.author}}>{{book.author}}</p></td>
+    <td><p class="desc" title={{book.description}}>{{book.description}}</p></td>
+    <td>{{book.price | currency:"INR"}}</td>
+    <td><p class="desc" title={{book.category}}>{{book.category}}</p></td>
+    <td><button class="btn btn-warning buttons" (click)="editBook(book)">Edit</button>
+      <button class="btn btn-danger buttons" (click)="deleteBook(book.id)">Delete</button>
+      <button class="btn btn-info buttons" (click)="viewBookReviews(book.name)">Read Book Reviews</button></td>
+    </tr>
+    <tr><td colspan="7"><h3 align="center" class="available">{{availableMessage}}</h3></td></tr>
+    </table>
+  </div>
+
+
+
+  
+  <div [class]="reviewsEnable?'show':'hide'">
+    <br><br><br>
+    <h1 align="center" style="color:rgb(180, 244, 255);">Reviews of "{{name}}"</h1>
+    <button class="btn btn-danger" style="margin-left: 30px;" (click)="gotoBookList()">Return to books list</button>
+    <table border="0">
+    <tr><th>User name</th><th>Book name</th><th>Review</th><th>Rating</th></tr>
+    
+    <tr *ngFor="let review of reviews">
+      <td><p class="desc" title={{review.uname}}>{{review.uname}}</p></td>
+      <td><p class="desc" title={{review.bname}}>{{review.bname}}</p></td>
+      <td><p class="desc" title={{review.review}}>{{review.review}}</p></td>
+      <td>{{review.rating}}</td></tr>
+      <tr><td colspan="4"><h3 align="center" class="available">{{availableReviewsMessage}}</h3></td></tr>
+    </table>
+  </div>
+
+  
+</body>
+</html>

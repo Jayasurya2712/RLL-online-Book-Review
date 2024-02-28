@@ -1,0 +1,46 @@
+<app-user-header></app-user-header>
+<body>
+<div [class]="successEnable?'show':'hide'">
+  <h1 align="center" id="moving-text" style="color:rgb(179, 223, 255); margin-top: 20%; ">Thank you for your review</h1>
+  
+</div>
+
+<div [class]="reviewEnable?'show':'hide'">
+  <h1 align="center" style="margin-top:0% ;color:#4baaca;text-shadow: none">Details of "{{book.name}}" written by "{{book.author}}"</h1>
+        <table border="0" align="center" class="table table-stripped">
+        <tr><td>Id</td><td >{{book.id}}</td></tr>
+        <tr><td>Book Title</td><td name="emp_name">{{book.name}}</td></tr>
+        <tr><td>Author Name</td><td>{{book.author}}</td></tr>
+        <tr><td>Description</td><td>{{book.description}}</td></tr>
+        <tr><td>Price</td><td>{{book.price}}</td></tr>
+        <tr><td>Category</td><td>{{book.category}}</td></tr>
+  </table><br>
+
+
+  <h1 align="center" style="color:#4baaca;text-shadow: none">Reviews of "{{book.name}}" </h1>
+    <table border="0" align="center" class="reviewtable">
+    <tr><th>User name</th><th>Book name</th><th>Review</th><th>Rating</th></tr>
+    
+    <tr *ngFor="let review of reviews">
+      <td><p class="desc" title={{review.uname}}>{{review.uname}}</p></td>
+      <td><p class="desc" title={{review.bname}}>{{review.bname}}</p></td>
+      <td><p class="desc" title={{review.review}}>{{review.review}}</p></td>
+      <td>{{review.rating}}</td></tr>
+      <tr><td colspan="4"><h3 align="center" class="available">{{availableMessage}}</h3></td></tr>
+    </table>
+  <br>
+
+
+    <h1 align="center" style="color:#4baaca; text-shadow: none;">Add your review</h1>
+    <h2 style="margin-top:5% ;color:red;text-align: center;" name="message">{{errorMessage}}</h2>
+      <table border="0" align="center" class="review">
+        <tr><td>Write a review for this book</td><td><textarea name="review" class="form-control" placeholder="Enter your review" [(ngModel)]="review.review" required></textarea></td></tr>
+        <tr><td>Rate between (1 to 5)</td><td><input name="rating" class="form-control" placeholder="Enter your rating" min="1" max="5" type="number" [(ngModel)]="review.rating" required></td></tr>
+        
+        <tr><td colspan="2" align="center"><button class="btn btn-success" type="button" name="add" (click)="addReview()">Submit review</button></td></tr>
+        
+    </table>
+</div>
+</body>
+
+

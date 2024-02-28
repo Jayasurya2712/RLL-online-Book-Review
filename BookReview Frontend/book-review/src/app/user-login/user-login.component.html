@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Authentication</title>
+  <link rel="stylesheet" href="user-login.component.css">
+</head>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand me-2" href="#">
+      <img src="https://e7.pngegg.com/pngimages/195/383/png-clipart-book-open-book-wood-desktop-wallpaper.png" height="25" alt="Logo" loading="lazy" style="margin-top: -1px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <h4>BNZ Book Club</h4>
+        </li>
+      </ul>
+      <div>
+        <button (click)="home()" class="btn btn-primary me-3" style="float: right; clear: both;">Home Page</button>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<body>
+
+  <div class="home">
+    <button (click)="home()" class="btn btn-primary me-3" style="float: right; clear: both;">Home Page</button>
+ 
+  </div>
+  <div class="container">
+
+
+
+
+    <div class="login-container" [class]="userLogin ? 'show' : 'hide'">
+
+      <div class="login-box">
+      
+      <h1 align="center" style="color: rgb(255, 255, 255);">User Login</h1>
+      <br>
+      <table border="0" class="table table-stripped" align="center">
+        <tr>
+          <td style="width: 102px;">User Email :</td>
+          <td><input name="uemail" class="form-control" type="text" [(ngModel)]="email" placeholder="Enter user Email" required></td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2" style="color: rgb(255, 129, 129);">{{ emptyEmail }}</td>
+        </tr>
+        <br>
+        <tr>
+          <td>Password :</td>
+          <td><input name="upass" class="form-control" type="password" [(ngModel)]="password" placeholder="Enter Password" required></td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2" style="color: rgb(255, 120, 120);">{{ emptyPass }}</td>
+        </tr>
+        <br>
+        <tr>
+          <td colspan="2" align="center">
+            <button name="login" class="btn btn-success" type="button" (click)="checkLogin()">Login</button>
+          </td>
+        </tr>
+      </table>
+      <h2 style="margin-top: 5%; color: rgb(252, 134, 134); text-align: center;" name="message">{{ loginMessage }}</h2>
+  
+      <div align="center" style=" color: white;">New User? Create an account <button class="btn btn-dark" name="registerpage" (click)="registerEnable()">Register</button></div>
+      
+    </div>
+    <div class="additional-box">
+    </div>
+    
+    </div>
+
+    
+    <div class="content-container"></div>
+
+
+
+    <div class="login-container" [class]="userRegistration ? 'show' : 'hide'">
+      <div class="login-box1">
+      
+      <h1 align="center" style="color: rgb(255, 255, 255);">User Registration</h1>
+      <table border="0" class="table table-stripped" align="center">
+        <br>
+        <tr>
+          <td style="width: 102px;">User Name :</td>
+          <td><input name="uname" class="form-control" type="text" [(ngModel)]="userRef.name" placeholder="Enter user name" required></td>
+        </tr>
+        <br>
+        <tr>
+          <td>User Email :</td>
+          <td><input name="uemail" class="form-control" type="text" [(ngModel)]="userRef.email" placeholder="Enter user email" required></td>
+        </tr>
+        <br>
+        <tr>
+          <td align="center" colspan="2" style="color: rgb(255, 133, 133);">{{ errorEmail }}</td>
+        </tr>
+        
+        <tr>
+          <td>Password :</td>
+          <td><input name="upass" class="form-control" type="password" [(ngModel)]="userRef.password" placeholder="Enter Password" required></td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2" style="color: rgb(255, 156, 156);">{{ errorPassword }}</td>
+        </tr>
+        <br>
+        <tr>
+          <td colspan="2" align="center">
+            <button name="register" class="btn btn-success" type="button" (click)="register()">Register</button>
+          </td>
+        </tr>
+      </table>
+      <h2 style="margin-top: 5%; color: rgb(255, 118, 118); text-align: center;" name="message">{{ registrationMessage }}</h2>
+      <div align="center" style=" color: white;">Already have an account? <button class="btn btn-dark" name="loginpage" (click)="loginEnable()">Login</button></div>
+    </div>
+    <div class="additional-box">
+    </div>
+    </div>
+  
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+
+
+
+
+ 

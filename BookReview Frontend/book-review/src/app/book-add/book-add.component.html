@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <h1><a ><img src="./assets/logo.jpg" height="25" alt="Logo" loading="lazy" style="margin-top: -10px;">
+      </a>ENZ Book Club</h1>
+    </div>
+    <div class="btn-group">
+      <a class="btn-link" routerLink="/dashboard">Return to Dashboard</a>
+      
+    </div>
+  </div>
+  <div class="container">
+    <h1>Add New Book</h1>
+    <h2>{{errorMessage}}</h2>
+    <table>
+      <tr>
+        <td>Title</td>
+        <td><input name="name" type="text" [(ngModel)]="book.name" placeholder="Enter book title" required></td>
+      </tr>
+      <tr>
+        <td>Author Name</td>
+        <td><input name="author" type="text" [(ngModel)]="book.author" placeholder="Enter author name" required></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td><textarea name="description" [(ngModel)]="book.description" placeholder="Enter book description" required></textarea></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><input name="price" type="number" [(ngModel)]="book.price" placeholder="Enter book price " required></td>
+      </tr>
+      <tr>
+        <td>Category</td>
+        <td><input name="category" type="text" [(ngModel)]="book.category" placeholder="Enter book category" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="button" name="add" (click)="addBook()">Add Book</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+body {
+  height: 600px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  background-image: url('https://wallpapercave.com/wp/wp6974302.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+}
+header {
+  color: #320f0f;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+  height: 400px;
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: white;
+}
+.contact-info h2{
+  color: #3498db;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: translateY(-5px);
+}
+
+.description {
+  color: white;
+  margin-top: 10px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-list strong {
+  color:  #3498db;
+}
+.contact-form {
+  background-color: #f8f8f8;
+}
+
+.contact-form h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 20px;
+}
+.contact-form label {
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form label i {
+  margin-right: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #504d53;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #b167ea;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  color: #fff;
+}
+

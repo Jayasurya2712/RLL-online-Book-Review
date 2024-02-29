@@ -43,6 +43,7 @@
     <div class="container table-container">
       <div class="row">
         <div class="col-md-6">
+          
           <table cellpadding="20" class="table-shadow">
             <tr>
               <td>Name:</td>
@@ -57,7 +58,7 @@
               <td><input class="form-control" type="text" [(ngModel)]="user.password"></td>
             </tr>
             <tr>
-              <td align="center" colspan="2" style="color:red">{{errorPassword}}</td>
+              <td align="center" colspan="2" style="color:red">{{errorMessage}}</td>
             </tr>
             <tr>
               <td colspan="2" align="center"><button class="btn btn-success" type="button" name="add"

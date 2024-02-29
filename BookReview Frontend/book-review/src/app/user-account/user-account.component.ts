@@ -17,11 +17,17 @@ export class UserAccountComponent implements OnInit {
   passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#&])[A-Za-z\d@#&]+$/
 
   updateAccount(name: string, email: string, password: string){
+    if (!name) {
+      this.errorMessage = "User name is a required field *";
+      return;
+    } else {
+      this.errorMessage = "";
+    }
     if(this.passwordRegex.test(password)){
-      this.errorPassword=""
+      this.errorMessage=""
     }
     else{
-      this.errorPassword="The password should have at least: One Uppercase, one lowercase, one special character (@,#,&….), and one number."
+      this.errorMessage="The password should have at least: One Uppercase, one lowercase, one special character (@,#,&….), and one number."
       return
     }
     this.user.name = name;
